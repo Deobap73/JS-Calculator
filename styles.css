@@ -1,0 +1,146 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 800px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #2d2a2a, #363232);
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-template-areas:
+    "c nd nm nsl"
+    "n7 n8 n9 nl"
+    "n4 n5 n6 ns"
+    "n1 n2 n3 ne"
+    "np n0 nde ne";
+}
+
+.c {
+  grid-area: c;
+}
+
+.nd {
+  grid-area: nd;
+}
+
+.nm {
+  grid-area: nm;
+}
+
+.nsl- {
+  grid-area: nml;
+  
+}
+
+.n7 {
+  grid-area: n7;
+}
+
+.n8 {
+  grid-area: n8;
+}
+
+.n9 {
+  grid-area: n9;
+}
+
+.nl {
+  grid-area: nl;
+}
+
+.n4 {
+  grid-area: n4;
+}
+
+.n5 {
+  grid-area: n5;
+}
+
+.n6 {
+  grid-area: n6;
+}
+
+.ns {
+  grid-area: ns;
+}
+
+.n1 {
+  grid-area: n1;
+}
+
+.n2 {
+  grid-area: n2;
+}
+
+.n3 {
+  grid-area: n3;
+}
+
+.np {
+  grid-area: np;
+}
+
+.n0 {
+  grid-area: n0;
+}
+
+.nde {
+  grid-area: nde;
+}
+
+.ne {
+  grid-area: ne;
+}
+
+#display {
+  width: 80%;
+  height: 50px;
+  margin-bottom: 50px;
+  background: linear-gradient(145deg, #2d2a2a, #363232);
+  box-shadow: 6px 6px 12px #2e2b2b, -6px -6px 12px #363333;
+  color: #4d87df;
+  font-size: 3.5rem;
+  text-align: right;
+}
+
+.grid {
+  width: 90px;
+  height: 90px;
+  align-items: center;
+}
+
+.container-1 button {
+  width: 90px;
+  height: 90px;
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, #2d2a2a, #363232);
+  font-size: 2rem;
+  color: white;
+}
+
+button:hover {
+  color: #4d87df;
+}
+
+.buttons,
+#display {
+  margin: 30px;
+}
+
+.ne button {
+  height: 180px;
+}
+
+.c button {
+  color: rgb(255, 68, 0);
+}

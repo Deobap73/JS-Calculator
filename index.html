@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="container-1">
+        <div class="c">
+          <button onclick="clearDisplay()">C</button>
+        </div>
+        <div class="nd">
+          <button onclick="appendOperator('/')">/</button>
+        </div>
+        <div class="nm">
+          <button onclick="appendOperator('*')">*</button>
+        </div>
+        <div class="nsl">
+          <button onclick="toggleSign()">+/-</button>
+        </div>
+        <div class="n7">
+          <button onclick="appendNumber('7')">7</button>
+        </div>
+        <div class="n8">
+          <button onclick="appendNumber('8')">8</button>
+        </div>
+        <div class="n9">
+          <button onclick="appendNumber('9')">9</button>
+        </div>
+        <div class="nl">
+          <button onclick="appendOperator('-')">-</button>
+        </div>
+        <div class="n4">
+          <button onclick="appendNumber('4')">4</button>
+        </div>
+        <div class="n5">
+          <button onclick="appendNumber('5')">5</button>
+        </div>
+        <div class="n6">
+          <button onclick="appendNumber('6')">6</button>
+        </div>
+        <div class="ns">
+          <button onclick="appendOperator('+')">+</button>
+        </div>
+        <div class="n1">
+          <button onclick="appendNumber('1')">1</button>
+        </div>
+        <div class="n2">
+          <button onclick="appendNumber('2')">2</button>
+        </div>
+        <div class="n3">
+          <button onclick="appendNumber('3')">3</button>
+        </div>
+        <div class="np">
+          <button onclick="calculatePercentage()">%</button>
+        </div>
+        <div class="n0">
+          <button onclick="appendNumber('0')">0</button>
+        </div>
+        <div class="nde">
+          <button onclick="appendDecimal()">.</button>
+        </div>
+        <div class="ne">
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
